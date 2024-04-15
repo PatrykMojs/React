@@ -1,0 +1,16 @@
+.linkToDetails a{
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+
+.linkToDetails a:hover{
+    color: #0890ff;
+}
+
+table{
+    background-color: #000;
+}
+
+th, td{
+    border: none;
+}

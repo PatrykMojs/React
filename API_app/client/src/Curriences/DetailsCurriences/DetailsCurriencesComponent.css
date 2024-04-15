@@ -1,0 +1,85 @@
+h2 {
+    margin-top: 20px;
+}
+
+.backgroundDetailsCurrency{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.containerFormChart{
+    margin-top: 10vh;
+    display: grid; 
+    grid-template-areas: 'chart form ';
+}
+
+
+.containerFormChart::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+  }
+  
+
+#formCurriences{
+    margin-right: 10vw;
+    grid-area: form;
+    background-color: #fff;
+}
+
+
+
+#chartCurriences{
+    grid-area: chart;
+}
+  
+form {
+    width: 70%;
+    height: 35vh;
+    margin: 5vh auto;
+    border:solid 0.1vh #2980b9;
+    border-radius: 2vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center; 
+}
+ 
+label{
+    margin: 2.5vh;
+    text-align: center;
+    font-size: 2.5vh;
+}
+  
+input{
+    padding: 1vh;
+    margin-top: 1vh;
+    border: solid 0.2vh #2980b9;
+    border-radius: 2vh;
+    font-size: 1vw;
+}
+  
+button{
+    width: 80%;
+    height: 5vh;
+    margin: 1vh auto;
+    grid-area: button;
+    background-color: #3498db;
+    color: white;
+    border: solid 0.3vh #2980b9;
+    border-radius: 2vh;
+    cursor: pointer;
+}
+  
+button:hover{
+    background-color: #2980b9;
+    border: solid 0.3vh #3498db;
+}

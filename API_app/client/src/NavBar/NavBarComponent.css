@@ -1,0 +1,110 @@
+.menuNav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #232323;
+  color: #cdcdcd;
+  padding: 10px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.menuNav-container a{
+  text-decoration: none;
+  background-color: rgba(245, 245, 245, 0.7);
+  backdrop-filter: blur(2vh);
+  color: #232323;
+  border: none;
+  border-radius: 1vh;
+  padding: 1vh 1vw;
+  transition: color 1s ease-in-out;
+}
+
+.menuNav-container a:hover{
+  background-color: rgba(245, 245, 245, 0.2);
+  color: #fff;
+}
+
+.clock{
+  padding: 1vh 3vw;
+  font-size: 5vh;
+}
+
+.menuNavBar ul {
+  margin-right: 5vw;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+  
+.menuNavBar li {
+  padding: 1vh 2vw;
+  font-size: 3vh;
+}
+  
+  /* mobile styles */
+  /* @media only screen and (max-width: 767px) { 
+    .menuNav-container {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    
+    .menuNav {
+      position: absolute;
+      box-sizing: border-box;
+      width: 300px;
+      right: -300px;
+      top: 0;
+      margin: -20px;
+      padding: 75px 50px 50px;
+      background: #cdcdcd;
+      -webkit-font-smoothing: antialiased;
+      /* to stop flickering of text in safari 
+      transform-origin: 0% 0%;
+      transform: translateX(0%);
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+  
+    .menuNav-container input:checked ~ .menu {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
+  @media only screen and (min-width: 768px) { 
+    .menuNav-container {
+      width: 100%;
+    }
+  
+    .menuNav-container a {
+      color: #cdcdcd;
+    }
+  
+    .menu-container input {
+      display: none;
+    }
+  
+    
+    .menu-container span {
+      display: none;
+    }
+  
+    .menu {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .menu ul {
+      display: flex;
+      padding: 0;
+    }
+  
+    .menu li {
+      padding: 0 20px;
+    }
+  }
+ */

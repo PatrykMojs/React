@@ -1,0 +1,58 @@
+.weatherBackground{
+    background-color: rgb(218, 221, 223);
+    position: relative;
+    width: 100%;
+    height: 86.5vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.rain-weather-background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://media.istockphoto.com/id/958956522/pl/zdj%C4%99cie/krople-deszczu-na-szybie-okna-na-zewn%C4%85trz-tekstury-tle-wody-wspania%C5%82y-ulewny-deszczowy-dzie%C5%84.jpg?s=2048x2048&w=is&k=20&c=VQCw0VJofAYLcDu3B1hqhDfDFy-m14c8yWvqfxKVra8=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.clouds-weather-background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://media.istockphoto.com/id/512218646/pl/zdj%C4%99cie/burzy-niebo-deszczem.jpg?s=2048x2048&w=is&k=20&c=WURAAJ1H7Ec6bi0GZ0orldPwX-WXiN32b1tBvcDiZB8=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.clear-weather-background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://media.istockphoto.com/id/1325919550/pl/zdj%C4%99cie/b%C5%82%C4%99kitne-niebo-z-chmurami-na-brzegu-florydy.jpg?s=2048x2048&w=is&k=20&c=9VTt06Jr5YV78vicrAKVXxiY8y5Qfn9-IIbX48v1k_c=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.container{
+    width: 70%;
+    height: 50vh;
+    margin: 20vh auto;
+    background-color: rgba(248, 248, 248, 0.1);
+    backdrop-filter: blur(10px);
+    flex-flow: wrap;
+    justify-content: space-around;
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 50px 0px rgba(66, 68, 90, 1);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.container:hover{
+    backdrop-filter: none;
+    transform: scale(1.05);
+}
+
+.weather{
+    width: 55%;
+    height: 45vh;
+    margin: 2vh 4vw;
+}
+
